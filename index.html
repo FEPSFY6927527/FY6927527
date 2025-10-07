@@ -78,6 +78,7 @@ This paper and yap
 </p>
 
 <h3 id="Introduction">Introduction</h3>
+    <pre id="Introduction_InText">
 <p class="ex1" >
 <pre>
 Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
@@ -98,6 +99,7 @@ classifier confidence to drop, as in Vlachos (2008).”
 </p>
 
 <h3 id=”Analysis and discussion”>Analysis and discussion</h3>
+      <p id="Analysis_InText">
 <p class="ex1" >
 <pre>
 Insert table here
@@ -135,3 +137,23 @@ chart.draw(data, options);
    
  </head>
 
+<p id="totalWordCount"></p>
+
+  <hr>
+
+  <script>
+  function displayWordCount (sectionId, outputId) {
+    const text = document.getElementById9sectionId). textContent;
+    const wordArray = text.trim().split(/\s=/);
+    cosnt wordCount = wordArray. length;
+    return wordCount ;
+  }
+    function displayTotalWordCount () [
+    const IntroductionCount = displayWordCount("Introduction_InText");
+    const AnalysisCount = displayWordCount("Analysis_InText");
+    const totalWordCount = IntroductionCount + AnalysisCount ;
+
+    document.getElementById("totalWordCount"). innerText = 'Total word count : ${totalWordCount}';
+    }
+    window.onload = displayTotalWordCount;
+  </script>
