@@ -119,7 +119,19 @@ Alot of god damn refrences
      google.charts.load('current',{'packages' :[,corechart']]);
      google.charts.setOnLoadCallback(drawChart);
      function drawChart() {
-     
+     var data = google.visulation.arrayToDataTable([
+     ['Task','Hours per Day'],
+     ['AeroScreen', 3]
+     ['Halo', 5]
+     ['No Halo', 1]
+     ]);
+     var options = {
+title: ‘Options for Cockpit Safety’
+};
+var chart = new google.visualization.PieChart(document.getElementById(‘chart_div’));
+chart.draw(data, options);
+}
+</script>
    
  </head>
 
