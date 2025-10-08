@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-
 <html>
 
-  <head>
-       
-<img src="download.png" alt=banner width="1200" height="300">
+<head>
+  <meta charset="UTF-8">
+  <title>ENG0018 Computer Laboratory 2025/2026</title>
+
+  <img src="download.png" alt="banner" width="1200" height="300">
   <h1><b>ENG0018 Computer Laboratory 2025/2026</b></h1>
-<h2> Student URN: 692727</h2>
-<hr>
-<h2 style="font-family:calibri;"><b> Confrence Paper: Invetistigating the Formula 1 Halo</b></h2>
+  <h2>Student URN: 692727</h2>
   <hr>
-  <!style for tables>
+  <h2 style="font-family:calibri;"><b>Conference Paper: Investigating the Formula 1 Halo</b></h2>
+  <hr>
+
+  <!-- Table style -->
   <style>
-  table { font-family: arial, sans-serif;
-         border-collapse: collapse;
-         width: 30%;
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 30%;
+    }
 
-
-        }
-
-    td, th {
+    td,
+    th {
       border: 1px solid #554640;
       text-align: left;
       padding: 8px;
@@ -29,131 +31,108 @@
       background-color: #CDE6F5;
     }
 
-
-
-
-    </style>
-
-  <style>
-    p.exl {
+    p.ex1 {
       margin-left: 250px;
     }
-    </style>
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://ww.w3schools.com/w3css/4/w3.css">
-    <style>
-      .mySlides {display:none;}
-    </style>
+
+    .mySlides {
+      display: none;
+    }
+  </style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-    <body style="background-color:#CDE6F5;margin-left:50px;">
 
+<body style="background-color:#CDE6F5;margin-left:50px;">
 
+  <!-- Table of contents -->
+  <table>
+    <tr>
+      <th>
+        <h3>Table of contents</h3>
+      </th>
+    </tr>
+    <tr>
+      <td><a href="#Abstract">Abstract</a></td>
+    </tr>
+    <tr>
+      <td><a href="#Introduction">Introduction</a></td>
+    </tr>
+    <tr>
+      <td><a href="#Analysis">Analysis and Discussion</a></td>
+    </tr>
+    <tr>
+      <td><a href="#References">References</a></td>
+    </tr>
+  </table>
 
+  <h3 id="Abstract">Abstract</h3>
+  <p class="ex1">
+    This paper investigates...
+  </p>
 
-      <!table of contents>
-      <table>
+  <h3 id="Introduction">Introduction</h3>
+  <p id="Introduction_InText" class="ex1">
+    Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
+    intelligent machine through interaction...
+  </p>
 
-        <tr>
-          <th><h3>Table of contents </h3></th>
-        </tr>
-        <tr>
-          <td><a href="~Abstract">Abstract</td>
-        </tr>
-        <tr>
-          <td><a href=#introduction">Introduction</td>
-        </tr>
-        <tr>
-          <td><a href="~Analysis and Discussion">Analysis and Discussion</td>
-        </tr>
+  <h3 id="Analysis">Analysis and Discussion</h3>
+  <p id="Analysis_InText" class="ex1">
+    Insert table here
+  </p>
 
-        <tr>
-          <td><a href="References">Refrences</td>
-        </tr>
-      </table>
-<h3 id="Abstract">Abstract</h3>
-<p class="ex1" >
-<pre>
-This paper and yap
-</pre>
-</p>
+  <div id="chart_div" style="width: 500px; height: 300px;"></div>
 
-<h3 id="Introduction">Introduction</h3>
-    <pre id="Introduction_InText">
-<p class="ex1" >
-<pre>
-Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
-intelligent machine through the interaction of an oracle with the machine system, over a sequence of
-learning epochs. A distinctive component in an active system is the querying strategy, used to sample
-candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
-to improve the classification model. Various strategies have been proposed including; Query by
-Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
-sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
-2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are
-presented for labeling, to a machine (database) or human oracle that has knowledge of the class
-labels. After adding the newly labeled instances to the current training set, a revised model is
-subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
-learning at each epoch. The process is continued until some stopping criterion has been met, such as
-reaching a stage where information from the selected instances is contrary to the model, causing the
-classifier confidence to drop, as in Vlachos (2008).”
-</pre>
-</p>
+  <h3 id="References">References</h3>
+  <p>
+    A lot of references...
+  </p>
 
-<h3 id=”Analysis and discussion”>Analysis and discussion</h3>
-      <p id="Analysis_InText">
-<p class="ex1" >
-<pre>
-Insert table here
-
-<h3 id="Refrences">Refrences</h3>
-
-<p>
-<pre>
-Alot of god damn refrences
-</pre>
-
-</p>
-  
- <head>
-   <title> My Daily Activities</title>
-   <script type="text/javascript" src=https://www.gstatic.com/charts/loaders.js></script>
-   <div id="chart_div"></div>
-   <script type="text/jacascript">
-     google.charts.load('current',{'packages' :[,corechart']]);
-     google.charts.setOnLoadCallback(drawChart);
-     function drawChart() {
-     var data = google.visulation.arrayToDataTable([
-     ['Task','Hours per Day'],
-     ['AeroScreen', 3]
-     ['Halo', 5]
-     ['No Halo', 1]
-     ]);
-     var options = {
-title: ‘Options for Cockpit Safety’
-};
-var chart = new google.visualization.PieChart(document.getElementById(‘chart_div’));
-chart.draw(data, options);
-}
-</script>
-   
- </head>
-
-<p id="totalWordCount"></p>
+  <p id="totalWordCount"></p>
 
   <hr>
 
-  <script>
-  function displayWordCount (sectionId, outputId) {
-    const text = document.getElementById9sectionId). textContent;
-    const wordArray = text.trim().split(/\s=/);
-    cosnt wordCount = wordArray. length;
-    return wordCount ;
-  }
-    function displayTotalWordCount () [
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
-    const totalWordCount = IntroductionCount + AnalysisCount ;
+  <!-- Google Charts -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
 
-    document.getElementById("totalWordCount"). innerText = 'Total word count : ${totalWordCount}';
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['AeroScreen', 3],
+        ['Halo', 5],
+        ['No Halo', 1]
+      ]);
+
+      var options = { title: 'Options for Cockpit Safety' };
+      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
     }
+  </script>
+
+  <!-- Word Count Script -->
+  <script>
+    function displayWordCount(sectionId) {
+      const text = document.getElementById(sectionId).textContent;
+      const wordArray = text.trim().split(/\s+/);
+      return wordArray.length;
+    }
+
+    function displayTotalWordCount() {
+      const introCount = displayWordCount("Introduction_InText");
+      const analysisCount = displayWordCount("Analysis_InText");
+      const totalWordCount = introCount + analysisCount;
+
+      document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+    }
+
     window.onload = displayTotalWordCount;
   </script>
+
+</body>
+
+</html>
