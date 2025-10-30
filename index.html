@@ -70,6 +70,7 @@
 <details open>
    <summary><b>Abstract ▼ </b></summary>
   <h3 id="Abstract">Abstract</h3>
+  
   <p class="ex1">
     <p style="margin-bottom: 20px;">
    The Halo was introduced by the FIA to enhance driver protection during the event of a high-impact incident, mitigating the risk of severe injuries in the event of a rollover or flying debris.
@@ -85,6 +86,7 @@ The paper examines the halos, design, development, and engineering analysis usin
     <summary><b>Introduction ▼ </b></b></summary>
   <h3 id="Introduction">Introduction</h3>
   <p id="Introduction_InText" class="ex1">
+    <pre id="Introduction_Intext">
     <p style="margin-bottom: 20px;">
     Formula One has always been a playground for various innovations in the Automotive Industry, 
 Examples include the KERS system and Active Suspension,
@@ -105,6 +107,7 @@ I’ve also studied at various CAD and FEA simulations and breaking down their r
   <summary><b>Analysis and Discussion ▼</b></summary>
   <h3 id="Analysis">Analysis and Discussion</h3>
   <p id="Analysis_InText" class="ex1">
+    <pre id="Analysis_Intext">
 <p style="margin-bottom: 20px;">
 The formula 1 halo was developed as a result from several accidents throughout the years of Formula One, Two main examples include Massa in 2009, Where during the Hungarian Grand Prix, Massa was trailing another car when a Spring came loose and flew out the back of the car and hit Felipe Massa causing a skull fracture, As well as Jules’s fatal crash in 2014,
 As a result of these two accidents, the FIA ,began research into the development of a safety device to protect the drivers.
@@ -373,8 +376,8 @@ https://www.youtube.com/watch?v=GXg1sGWpLlQ
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction");
-    const AnalysisCount = displayWordCount("Analysis");
+    const IntroductionCount = displayWordCount("Introduction_Intext");
+    const AnalysisCount = displayWordCount("Analysis_Intext");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
