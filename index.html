@@ -162,26 +162,33 @@
         <img src="Indy.png" alt="Indy" width="300" height="150">
       </div>
     </div>
-      <!-- Google Charts -->
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript">
-    google.charts.load('current', { 'packages': ['corechart'] });
-    google.charts.setOnLoadCallback(drawChart);
+     <!-- Google Charts -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', { 'packages': ['corechart'] });
+  google.charts.setOnLoadCallback(drawChart);
 
-    function drawChart() {
-      var data = google.visualization.arrayToDataTable([
-        ['Task', 'Hours per Day'],
-        ['Non Lethal Accidents', 9.3],
-        ['Halo saved the drivers life', 0.7],
-      ]);
+  function drawChart() {
+    // Create data table
+    var data = google.visualization.arrayToDataTable([
+      ['Incident Type', 'Percentage'],
+      ['Non Lethal Accidents', 93],
+      ['Halo Saved Driver’s Life', 7]
+    ]);
 
-      var options = { title: 'Options for Cockpit Safety' };
-      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-      chart.draw(data, options);
-    }
-  </script>
-  </details>
+    // Chart options
+    var options = {
+      title: 'Formula 1 Incidents Saved by the Halo',
+      pieHole: 0.4, // makes it a donut chart
+      colors: ['#8C8C8C', '#D32F2F'], // optional
+      legend: { position: 'bottom' }
+    };
 
+    // Draw chart
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  }
+</script>
   <div id="chart_div" style="width: 500px; height: 300px;"></div>
 
   <h3 id="References">References</h3>
