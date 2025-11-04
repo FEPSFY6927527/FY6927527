@@ -162,7 +162,7 @@
         <img src="Indy.png" alt="Indy" width="300" height="150">
       </div>
     </div>
-    <!-- Google Charts -->
+     <!-- Google Charts -->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
   google.charts.load('current', { 'packages': ['corechart'] });
@@ -176,24 +176,20 @@
       ['Halo Saved Driver’s Life', 7]
     ]);
 
-    // Chart options (regular pie chart)
+    // Chart options
     var options = {
       title: 'Formula 1 Incidents Saved by the Halo',
-      legend: { position: 'bottom' },
-      backgroundColor: '#FFFFFF'
+      pieHole: 0.4, // makes it a donut chart
+      colors: ['#8C8C8C', '#D32F2F'], // optional
+      legend: { position: 'bottom' }
     };
 
     // Draw chart
     var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
     chart.draw(data, options);
   }
-
-  // Redraw on window resize for responsiveness
-  window.addEventListener('resize', drawChart);
 </script>
-
-<!-- Chart placement -->
-<div id="chart_div" style="width: 600px; height: 400px; margin: 20px auto;"></div>
+  <div id="chart_div" style="width: 500px; height: 300px;"></div>
 
   <h3 id="References">References</h3>
   <div style="margin-left: 50px;">
