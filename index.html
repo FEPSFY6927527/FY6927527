@@ -162,33 +162,26 @@
         <img src="Indy.png" alt="Indy" width="300" height="150">
       </div>
     </div>
-     <!-- Google Charts -->
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-  google.charts.load('current', { 'packages': ['corechart'] });
-  google.charts.setOnLoadCallback(drawChart);
+      <!-- Google Charts -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
 
-  function drawChart() {
-    // Create data table
-    var data = google.visualization.arrayToDataTable([
-      ['Incident Type', 'Percentage'],
-      ['Non Lethal Accidents', 93],
-      ['Halo Saved Driver’s Life', 7]
-    ]);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Non Lethal Accidents', 9.3],
+        ['Halo saved the drivers life', 0.7],
+      ]);
 
-    // Chart options
-    var options = {
-      title: 'Formula 1 Incidents Saved by the Halo',
-      pieHole: 0.4, // makes it a donut chart
-      colors: ['#8C8C8C', '#D32F2F'], // optional
-      legend: { position: 'bottom' }
-    };
+      var options = { title: 'Options for Cockpit Safety' };
+      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+  </script>
+  </details>
 
-    // Draw chart
-    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-    chart.draw(data, options);
-  }
-</script>
   <div id="chart_div" style="width: 500px; height: 300px;"></div>
 
   <h3 id="References">References</h3>
@@ -278,7 +271,7 @@
       const analysisCount = displayWordCount("Analysis_InText");
       const totalWordCount = introCount + analysisCount;
 
-      document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+      document.getElementById("totalWordCount").innerText = Total word count: ${totalWordCount};
     }
 
     window.onload = displayTotalWordCount;
@@ -290,7 +283,7 @@
       const username = 'FEPSFY6927527';
       const repo = 'FY6927527';
 
-      const url = `https://api.github.com/repos/${username}/${repo}/commits`;
+      const url = https://api.github.com/repos/${username}/${repo}/commits;
       try {
         const response = await fetch(url, {
           method: 'GET',
@@ -299,12 +292,12 @@
           }
         });
         if (!response.ok) {
-          throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
+          throw new Error(Error fetching data: ${response.status} - ${response.statusText});
         }
         const commits = await response.json();
         if (commits && commits.length > 0) {
           const lastCommitDate = new Date(commits[0].commit.committer.date);
-          document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
+          document.getElementById('last-updated').innerText = Last Modified Time: ${lastCommitDate.toLocaleString()};
         } else {
           document.getElementById('last-updated').innerText = 'No commits found in the repository.';
         }
