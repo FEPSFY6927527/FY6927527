@@ -247,16 +247,30 @@
     </p>
   </div>
 
-  <p id="totalWordCount"></p>
-  <hr>
-
-  <!-- Last commit time display -->
+ <!-- Last commit time display -->
   <div id="last-updated">Loading last update time...</div>
   <button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
     Verify Last Modified Time
   </button>
 
+  <!-- Google Charts -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
 
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Non Lethal Accidents', 9.3],
+        ['Halo saved the drivers life', 0.7],
+      ]);
+
+      var options = { title: 'Options for Cockpit Safety' };
+      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+  </script>
 
   <!-- Word Count Script -->
   <script>
@@ -271,7 +285,7 @@
       const analysisCount = displayWordCount("Analysis_InText");
       const totalWordCount = introCount + analysisCount;
 
-      document.getElementById("totalWordCount").innerText = Total word count: ${totalWordCount};
+      document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
     }
 
     window.onload = displayTotalWordCount;
@@ -283,7 +297,7 @@
       const username = 'FEPSFY6927527';
       const repo = 'FY6927527';
 
-      const url = https://api.github.com/repos/${username}/${repo}/commits;
+      const url = `https://api.github.com/repos/${username}/${repo}/commits`;
       try {
         const response = await fetch(url, {
           method: 'GET',
@@ -292,12 +306,12 @@
           }
         });
         if (!response.ok) {
-          throw new Error(Error fetching data: ${response.status} - ${response.statusText});
+          throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
         }
         const commits = await response.json();
         if (commits && commits.length > 0) {
           const lastCommitDate = new Date(commits[0].commit.committer.date);
-          document.getElementById('last-updated').innerText = Last Modified Time: ${lastCommitDate.toLocaleString()};
+          document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
         } else {
           document.getElementById('last-updated').innerText = 'No commits found in the repository.';
         }
