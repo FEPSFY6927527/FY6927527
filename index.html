@@ -286,12 +286,18 @@
     }
   </script>
 
-  <!-- Word Count Script -->
+ <!-- Word Count Script -->
   <p id="totalWordCount"></p>
   <script>
     function displayWordCount(sectionId) {
-      const text = document.getElementById(sectionId).textContent;
-      const wordArray = text.trim().split(/\s+/);
+      // Only count text inside <p> elements
+      const paragraphs = document.querySelectorAll(`#${sectionId} p`);
+      let text = "";
+      paragraphs.forEach(p => {
+        text += " " + p.textContent;
+      });
+
+      const wordArray = text.trim().split(/\s+/).filter(word => word.length > 0);
       return wordArray.length;
     }
 
@@ -299,12 +305,12 @@
       const introCount = displayWordCount("Introduction_InText");
       const analysisCount = displayWordCount("Analysis_InText");
       const totalWordCount = introCount + analysisCount;
-
       document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
     }
 
     window.onload = displayTotalWordCount;
   </script>
+
 
   <!-- GitHub Last Updated Script -->
   <script>
