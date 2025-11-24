@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>ENG0018 Computer Laboratory 2025/2026</title>
+
+  <img src="download.png" alt="banner" width="1200" height="300">
+  <h1><b>ENG0018 Computer Laboratory 2025/2026</b></h1>
+  <h2>Student URN: 6927527</h2>
+  <hr>
+  <h2 style="font-family:calibri;"><b>Conference Paper: Investigating the Formula 1 Halo</b></h2>
+  <hr>
+
+  <! Table style >
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 30%;
+    }
+
+    td,
+    th {
+      border: 1px solid #FFFFFF;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #FFFFFF ;
+    }
+
+    p.ex1 {
+      margin-left: 250px;
+    }
+
+    .mySlides {
+      display: none;
+    }
+  </style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body style="background-color:#FFFFFF;margin-left:50px;">
+
+  <! Table of contents >
+  <table>
+    <tr>
+      <th>
+        <h3>Table of contents</h3>
+      </th>
+    </tr>
+    <tr>
+      <td><a href="#Abstract">Abstract</a></td>
+    </tr>
+    <tr>
+      <td><a href="#Introduction">Introduction</a></td>
+    </tr>
+    <tr>
+      <td><a href="#Analysis">Analysis and Discussion</a></td>
+    </tr>
+    <tr>
+      <td><a href="#References">References</a></td>
+    </tr>
+  </table>
+ 
+<details open>
+   <summary><b>Abstract ▼ </b></summary>
+  <h3 id="Abstract">Abstract</h3>
+ 
+  <p class="ex1">
+    <p style="margin-bottom: 20px;">
+   The Halo was introduced by the FIA to enhance driver protection during the event of a high-impact incident, mitigating the risk of severe injuries in the event of a rollover or flying debris.
+The Halo is a 3-pronged structure surrounding the cockpit and is made of Grade 5 Titanium and coated in Carbon Fibre, making it able to withstand 125kN.
+The paper examines the halos, design, development, and engineering analysis using CAD  and FEA from external sources to highlight their strength and aerodynamic effectiveness with a mixture of material analysis and different loads onto the halo to show its capabilities.
+    The paper also analyzes crashes over the years and how the halo has saved countless drivers' lives or prevented major injuries in the event of a rollover or debris. This is to overall highlight the Halo as the most significant addition to Formula 1 safety since the seatbelt.
+
+
+  </p>
+</details>
+
+ <details open>
+    <summary><b>Introduction ▼ </b></summary>
+    <h3 id="Introduction">Introduction</h3>
+    <div id="Introduction_InText" class="content-section">
+      <p>
+        Formula One has always been a playground for various innovations in the Automotive Industry. Examples include the KERS system and Active Suspension. These systems all stemmed from the pursuit of domination by various teams during the peak innovation years of the sport, reflecting the engineering excellence. The Halo is the definition of engineering perfection.
+      </p>
+      <p>
+        The Formula One Halo was introduced in 2018, made from Grade 5 Titanium, and is only 7kg. It was brought in under the FIA as a compulsory addition to the car, meant to protect the drivers in the event of a serious accident. This study examines the development of the halo, used resources and references to make an analysis, and displayed the statistics of the halo, its earlier developmental stages and its variations, and how it's saved multiple drivers since its introduction. I've also studied at various CAD and FEA simulations and breaking down their results to show how the halo was chosen out of its variations by using the FEA simulations as direct comparisons via airflow management and visibility for the driver. It'll also breakdown the reason why the halo was implemented due to the number of injuries which could of been prevented by the halo showing how critical it was to be implemented.
+      </p>
+    </div>
+  </details>
+
+  <details open>
+    <summary><b>Analysis and Discussion ▼</b></summary>
+    <h3 id="Analysis">Analysis and Discussion</h3>
+    <div id="Analysis_InText" class="content-section">
+      <p>
+        The formula 1 halo was developed as a result from several accidents throughout the years of Formula One. Two main examples include Massa in 2009, where during the Hungarian Grand Prix, Massa was trailing another car when a Spring came loose and flew out the back of the car and hit Felipe Massa causing a skull fracture, as well as Jules's fatal crash in 2014. As a result of these two accidents, the FIA began research into the development of a safety device to protect the drivers.
+      </p>
+
+      <p>
+        In 2016, trials began of the halo testing various types and designs. First tested in March 2016 when Kimi Raikkonen tested it in Barcelona, and testing continued with redbull testing the aeroscreen in 2016 (F1, 2016, (n.a)). The fully enclosed cockpit wasn't brought out on track due to the testing results being unfavourable for driver safety when exiting the car. The same year, Ferrari and Redbull both began testing the Aeroscreen and Halo prototypes (F1, 2016 (n.a)). While the aeroscreen offered full frontal protection, it caused glare, distortion and water accumulation. The halo although visually bulky, maintained a clear visibility and performed well in various testing. Despite early criticism from fans and teams, it received praise after the 2018 Spa GP. The FIA also tested the Halo in a test where a tyre acting as a projectile was launched into the early concept of the halo, weighing 20kg, at 225kph. The feedback was positive as the halo only displaced a small amount and showed no signs of failing. (FIA, 2016)
+      </p>
+
+      <div class="image-container">
+        <img src="Screenshot 2025-10-23 110158.png" alt="FIA" width="600" height="300">
+      </div>
+
+      <p>
+        Testing 40 incidents the halo provided a 17% theoretical survival increase using real life cases. (FIA, 2016)
+      </p>
+
+      <p>
+        CAD and FEA (D'Alessandro, Et al. (n.d), demonstrate that the halo causes minimal aerodynamic disturbance with little turbulence build up. This shows very little effect to the cars performance when comparing with the 2016 cars. When compared to the Aeroscreen using results from Indycar provided by Marshal Pruett on IndyCar pooling, the Aeroscreen showed results of more force and turbulence acting on the aeroscreen due to having a much larger drag coefficient then the halo. (Ref Img)
+      </p>
+
+      <p>
+        When analysing the CAD results for stress testing (Raikar, D. 2022), it shows how the Halo is able to withstand a magnitude of 125KN of force upfront. Diagram in the figures below where the halo is outlined it shows how the majority of the stress is put into the tri-split of the halo at an average stress of 1118.5MPa under a 116KN but displays the tiniest displacement showing only 1.233mm as stated by the website this is due to its high tensile strength. Later in his test he shows that during a collison at 320km/h only displaces a displacement of 12.3mm with a maximum stress of 29782MPa.
+      </p>
+
+      <p>
+        (Youtube (F1), 2018) At Spa, Leclerc was in front of drivers Alonso and Hulkenberg. Going into the first corner Hulkenberg missed his braking point and hit Fernando Alonso who as a result, went into the back and over Leclerc's Sauber. Fernando's wheel hit the halo, causing the tyre to collapse and go over it, saving Leclerc's life by saving him from a fatal injury. As a result former criticiser Toto Wolf, called it 'Necessary'. In 2021, Lewis Hamilton collided with Max Verstappen resulting in Max's wheel landing on Lewis's halo and absorbing the blow saving his life. (Youtube (F1), 2021)
+      </p>
+
+      <p>
+        A year later saw F1's worst accident. In 2020 during the Bahrain Grand Prix a accident caused Romain Grosjean to crash into the metal barrier. In the crash the car caught on fire. The Halo acted as a barrier and bent the metal barrier around it protecting Grosjean allowing him to get out the car with only minor burns. (ESPN (n.a), 2020)
+      </p>
+
+      <p>
+        In 2022, there were 2 disasters at the same grand prix. F2 driver Roy Nissany got involved in an accident where a car was launched into the air and collided with his halo. At the F1 race that same weekend, Zhou Guanyu flipped at the start of the grand prix and resulted in him flipping upwards of 6 times into the barrier, where, without the halo, he would have been killed. (Youtube, F1, 2022)
+      </p>
+
+      <p>
+        Below, in a Pie chart, you'll see the exact percentage of drivers in the Formula series saved by the halo.
+      </p>
+
+      <p>
+        Since its introduction in 2018, the halo has redefined safety standards in Formula 1. Through a combination of vigorous testing with varying materials to meet the high-performance standards of Formula One, it has saved multiple lives and established a new benchmark for driver protection. The success of the halo, unfortunately, comes from dark roots, but it was necessary to show its value in the sport to save others' lives.
+      </p>
+
+      <div class="image-container">
+        <img src="001-018 HALO MERCEDES 2018  CRASH TEST   FOM.avif" alt="Halo" width="600" height="300">
+        <img src="Aero.png" alt="Aero" width="1200" height="400">
+        <img src="Indy.png" alt="Indy" width="300" height="150">
+      </div>
+    </div>
+  </details>
+
+   
+
+
+  <div id="chart_div" style="width: 500px; height: 300px;"></div>
+
+  <h3 id="References">References</h3>
+  <p>
+     <p style="margin-bottom: 40px;">
+        <a href="https://www.ucd.ie/eacollege/t4media/David-D_Alessandro_Washington-University-St-Louis.pdf" target="_blank">
+  D’Alessandro, Et al (n.d) CFD Analysis of a Formula One Car to Determine the Halo’s Affect on the Car’s Performance. University College Dublin/ Washington Univeristy in St.Louis
+https://www.ucd.ie/eacollege/t4media/David-D_Alessandro_Washington-University-St-Louis.pdf
+        </a>
+          </p>
+ 
+ 
+ <p style="margin-bottom: 40px;">
+   <a href="https://www.youtube.com/watch?v=EyTeDaiUL6s" target="_blank">
+ESPN (2020) ‘Grosjean Halo safety device saved my life in F1 crash’, ESPN, 29 November.
+https://www.youtube.com/watch?v=EyTeDaiUL6s
+     </a>
+    </p>
+ 
+     <p style="margin-bottom: 40px;">
+        <a href="https://www.fia.com/news/how-make-f1-halo" target="_blank">
+FIA (2018) ‘How to Make an F1 Halo’, ‘Federation Interionale De l’Autmobile’ 13, March
+https://www.fia.com/news/how-make-f1-halo
+          </a>
+       </p>
+ 
+ <p style="margin-bottom: 40px;">
+    <a href="https://www.formula1.com/en/latest/article/f1-halo-strength-bus.51zS5jAngIIy6okOkUKmso" target="_blank">
+ Formula1.com (2016) ‘Halo Strong enough to hold hold a bus, Say Mercedes’ Formula1.com
+https://www.formula1.com/en/latest/article/f1-halo-strength-bus.51zS5jAngIIy6okOkUKmso
+      </a>
+   </p>
+
+     <p style="margin-bottom: 40px;">
+          <a href="https://www.formula1.com/en/latest/article/ferrari-trial-halo-cockpit-protection-in-spain.7JTgYQ2Y80HfPfXeGB7A4X" target="_blank">
+ Formula1.com (2016) ‘Ferrari trial halo cockpit protection in Spain’, Formula1.com.
+https://www.formula1.com/en/latest/article/ferrari-trial-halo-cockpit-protection-in-spain.7JTgYQ2Y80HfPfXeGB7A4X
+            </a>
+       </p>
+       
+ <p style="margin-bottom: 40px;">
+   <a href="https://www.formula1.com/en/latest/article/red-bull-to-debut-canopy-concept-in-sochi.5Navlwaxoc34wwbqELSR4" target="_blank">
+Formula1.com (n.d.) ‘Red Bull to debut canopy concept in Sochi’, Formula1.com.
+https://www.formula1.com/en/latest/article/red-bull-to-debut-canopy-concept-in-sochi.5Navlwaxoc34wwbqELSR4I
+     </a>
+   </p>
+
+   
+ <p style="margin-bottom: 40px;">
+    <a href="https://racer.com/2022/11/10/insight-how-indycar-is-addressing-the-aeroscreens-pooling-problem" target="_blank">
+ Pruett, M. (2022) ‘INSIGHT: How IndyCar is addressing the aeroscreen’s poolng problem’ RACER, 10 November
+https://racer.com/2022/11/10/insight-how-indycar-is-addressing-the-aeroscreens-pooling-problem
+      </a>
+   </p>
+   
+ <p style="margin-bottom: 40px;">
+   <a href="https://www.ijraset.com/research-paper/modal-and-explicit-analysis-of-formula1-halo" target="_blank">
+Raikar, D. (2022) ‘Modal and Explicit Analysis of Formula 1 Halo’, International Journal for Research in Applied Science and Engineering Technology (IJRASET), Vol. 10 (6).
+https://www.ijraset.com/research-paper/modal-and-explicit-analysis-of-formula1-halo
+     </a>
+   </p>
+ 
+ <p style="margin-bottom: 40px;">
+   <a href="https://www.youtube.com/watch?v=JaPKqGO59T0" target="_blank">
+Youtube, Formula 1, 2020 ‘Hamilton and Verstappen BOTH crash out’
+https://www.youtube.com/watch?v=JaPKqGO59T0
+     </a>
+   </p>
+   
+ <p style="margin-bottom: 40px;">
+    <a href="https://www.youtube.com/watch?v=GXg1sGWpLlQ" target="_blank">
+Youtube, Formula 1, 2018 ‘2018 Belgian Grand Prix Highlights’
+https://www.youtube.com/watch?v=GXg1sGWpLlQ
+      </a>
+</p>
+
+
+  </p>
+
+  <p id="totalWordCount"></p>
+
+  <hr>
+
+  
